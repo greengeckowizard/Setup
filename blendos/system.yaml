@@ -1,0 +1,26 @@
+impl: http://github.com/blend-os/tracks/raw/main
+packages:
+- nvidia-dkms
+- nvidia-prime
+- switcheroo-control
+- firefox
+- flatpak
+- docker
+- docker-compose
+- steam
+- xdg-desktop-portal
+- xdg-desktop-portal-gtk
+aur-packages:
+    - 'rtl8852bu-dkms-git'
+    - 'visual-studio-code-bin'
+    - 'nvidia-settings'
+    - 'minecraft-launcher'
+    - 'networkmanager-openvpn'
+    - 'github-desktop'
+repo: https://pkg-repo.blendos.co
+package-repos:
+  - name: 'multilib'
+    repo-url: 'https://mirrors.rit.edu/archlinux/multilib/os/$arch/'
+services:
+- switcheroo-control
+track: cinnamon
